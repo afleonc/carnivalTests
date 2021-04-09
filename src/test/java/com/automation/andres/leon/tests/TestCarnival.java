@@ -6,6 +6,7 @@ import org.testng.annotations.Test;
 
 import com.automation.andres.leon.pages.HomePage;
 import com.automation.andres.leon.pages.SearchResultsPage;
+import com.automation.andres.leon.pages.TripDetailsPage;
 
 public class TestCarnival extends BaseTests {
 
@@ -25,9 +26,21 @@ public class TestCarnival extends BaseTests {
 		homePage.navigate();
 		SearchResultsPage searchResultsPage = homePage.search();
 	    searchResultsPage.displayPricingFilterOptions();
-	    searchResultsPage.setPriceFilterRange(500, 700);
-	    assertTrue(searchResultsPage.areAllResultsInPriceRange(500, 700), "Results out of price range");
+	    searchResultsPage.setPriceFilterRange(200, 1800);
+	    assertTrue(searchResultsPage.areAllResultsInPriceRange(200, 1800), "Results out of price range");
 	    assertTrue(searchResultsPage.areAllResultsSortedInAscendantOrder(), "Results not sorted in ascendant order");
+	}
+	
+	@Test(description = "US02-00 Choose one sail to learn more about the trip", groups = { "userStory02" })
+	public void viewTripDetails() {
+		HomePage homePage = getHomePage();
+		homePage.navigate();
+		homePage.selectSailDestination("The Bahamas");
+		homePage.selectDuration("6 - 9 Days");
+		SearchResultsPage searchResultsPage = homePage.search();
+		TripDetailsPage tripDetailsPage = searchResultsPage.selectSearchResultByIndex(1);
+		assertTrue(tripDetailsPage.isEachDayInItineraryTile(), "There is not a tile for each day of the itinerary");
+		assertTrue(tripDetailsPage.isBookingButtonDisplayed(), "Booking button is not present on header");
 	}
 
 }

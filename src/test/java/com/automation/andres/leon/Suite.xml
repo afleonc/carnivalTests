@@ -12,4 +12,14 @@
 			<class name="com.automation.andres.leon.tests.TestCarnival"/>
 		</classes>
 	</test>
+	<test name="User story 02">
+		<groups>
+			<run>
+				<include name="userStory02"/>
+			</run>
+		</groups>
+		<classes>
+			<class name="com.automation.andres.leon.tests.TestCarnival"/>
+		</classes>
+	</test>
 </suite>

@@ -2,6 +2,7 @@ package com.automation.andres.leon.pages;
 
 import java.util.List;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Action;
@@ -13,7 +14,12 @@ public class SearchResultsPage extends BasePage{
 	
 	public SearchResultsPage(WebDriver driver) {
 		super(driver);
+		getWait().until(ExpectedConditions.visibilityOf(resultsContainer));
+		getWait().until(ExpectedConditions.presenceOfElementLocated(By.tagName("ccl-view-result-grid-item")));
 	}
+	
+	@FindBy (tagName = "ccl-view-result-container")
+	private WebElement resultsContainer;
 	
 	@FindBy(tagName = "ccl-view-result-grid-item")
 	private List<WebElement> searchResults;
@@ -86,6 +92,12 @@ public class SearchResultsPage extends BasePage{
 			}
 		}
 		return true;
+	}
+
+	public TripDetailsPage selectSearchResultByIndex(int i) {
+		clickElement(searchResults.get(i).findElement(By.className("vrgf-learn-more")));
+		return new TripDetailsPage(getDriver());
+		
 	}
 	
 }
