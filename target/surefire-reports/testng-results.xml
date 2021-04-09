@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="3" total="6" passed="3" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2021-04-09T05:26:18 COT" name="Final exam" finished-at="2021-04-09T05:27:38 COT" duration-ms="80241">
+    <groups>
+      <group name="userStory01">
+        <method signature="TestCarnival.filterSearchResult()[pri:0, instance:com.automation.andres.leon.tests.TestCarnival@7c6908d7]" name="filterSearchResult" class="com.automation.andres.leon.tests.TestCarnival"/>
+        <method signature="TestCarnival.searchCruises()[pri:0, instance:com.automation.andres.leon.tests.TestCarnival@7c6908d7]" name="searchCruises" class="com.automation.andres.leon.tests.TestCarnival"/>
+      </group> <!-- userStory01 -->
+      <group name="userStory02">
+        <method signature="TestCarnival.viewTripDetails()[pri:0, instance:com.automation.andres.leon.tests.TestCarnival@394df057]" name="viewTripDetails" class="com.automation.andres.leon.tests.TestCarnival"/>
+      </group> <!-- userStory02 -->
+    </groups>
+    <test started-at="2021-04-09T05:26:18 COT" name="User story 01" finished-at="2021-04-09T05:27:13 COT" duration-ms="55151">
+      <class name="com.automation.andres.leon.tests.TestCarnival">
+        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:com.automation.andres.leon.tests.TestCarnival@7c6908d7]" started-at="2021-04-09T05:26:18 COT" name="beforeSuite" finished-at="2021-04-09T05:26:31 COT" duration-ms="12957" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method signature="filterSearchResult()[pri:0, instance:com.automation.andres.leon.tests.TestCarnival@7c6908d7]" started-at="2021-04-09T05:26:31 COT" name="filterSearchResult" description="US01-01 Filter search results by price" finished-at="2021-04-09T05:27:02 COT" duration-ms="31280" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- filterSearchResult -->
+        <test-method signature="searchCruises()[pri:0, instance:com.automation.andres.leon.tests.TestCarnival@7c6908d7]" started-at="2021-04-09T05:27:02 COT" name="searchCruises" description="US01-00 Search cruises with valid dates" finished-at="2021-04-09T05:27:13 COT" duration-ms="10655" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchCruises -->
+        <test-method is-config="true" signature="afterSuite()[pri:0, instance:com.automation.andres.leon.tests.TestCarnival@7c6908d7]" started-at="2021-04-09T05:27:13 COT" name="afterSuite" finished-at="2021-04-09T05:27:13 COT" duration-ms="219" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- com.automation.andres.leon.tests.TestCarnival -->
+    </test> <!-- User story 01 -->
+    <test started-at="2021-04-09T05:27:13 COT" name="User story 02" finished-at="2021-04-09T05:27:38 COT" duration-ms="24693">
+      <class name="com.automation.andres.leon.tests.TestCarnival">
+        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:com.automation.andres.leon.tests.TestCarnival@394df057]" started-at="2021-04-09T05:27:13 COT" name="beforeSuite" finished-at="2021-04-09T05:27:21 COT" duration-ms="8028" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method signature="viewTripDetails()[pri:0, instance:com.automation.andres.leon.tests.TestCarnival@394df057]" started-at="2021-04-09T05:27:21 COT" name="viewTripDetails" description="US02-00 Choose one sail to learn more about the trip" finished-at="2021-04-09T05:27:38 COT" duration-ms="16240" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- viewTripDetails -->
+        <test-method is-config="true" signature="afterSuite()[pri:0, instance:com.automation.andres.leon.tests.TestCarnival@394df057]" started-at="2021-04-09T05:27:38 COT" name="afterSuite" finished-at="2021-04-09T05:27:38 COT" duration-ms="423" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- com.automation.andres.leon.tests.TestCarnival -->
+    </test> <!-- User story 02 -->
+  </suite> <!-- Final exam -->
+</testng-results>

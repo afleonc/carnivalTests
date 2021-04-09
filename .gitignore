@@ -1,4 +1,6 @@
-/target/
+/target/generated-test-sources/
+/target/maven-archiver/
+/target/maven-status/
 /bin/
 /.settings/
 
