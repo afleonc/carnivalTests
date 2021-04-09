@@ -2,4 +2,14 @@
 
 <suite name="Final exam">
 	<parameter name="browser" value="chrome" />
+	<test name="User story 01">
+		<groups>
+			<run>
+				<include name="userStory01"/>
+			</run>
+		</groups>
+		<classes>
+			<class name="com.automation.andres.leon.tests.TestCarnival"/>
+		</classes>
+	</test>
 </suite>
